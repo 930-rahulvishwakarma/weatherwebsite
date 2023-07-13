@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 2px 2px 6px 2px rgba(128, 128, 128, 0.658) inset;
+    overflow: hidden;
+  }
+
+body > img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+main{
+    min-height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+main > .search{
+    margin-top: 15%;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > .search > input{
+  width: 85%;
+  height: 50%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: rgb(255, 255, 255,0.5);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  
+}
+
+
+.search ::placeholder{
+    font-weight: bolder;
+    font-size: 17px;
+    text-align: center;    
+  }
+
+.search span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: rgb(255, 255, 255,0.5);
+
+}
+
+.search span > ion-icon{
+    font-size: 25px;
+    color: gray;
+
+}
+
+.datas{
+    width: 80%;
+    height: 250px;
+    display: grid;
+    place-items: center;
+}
+
+.datas > .image > ion-icon{
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.699);
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffffcc;
+}
+
+.area{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.area > div{
+  display: flex;
+  place-items: center;
+}
+.area > ion-icon{
+  font-size: 25px;
+}
+
+.footer{
+    height: 20%;
+    position: relative;
+}
+
+.footer > svg{
+  height: 100%;
+}
+
+  .waves {
+    width: 100%;
+    height: 100%;
+}
+  
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 5s;
+  }
+  
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 8s;
+  }
+  
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  /* /* Shrinking for mobile */
+  @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+  
+  }
+
+
+
+

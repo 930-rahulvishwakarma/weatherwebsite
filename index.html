@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather website</title>
+  <link rel="stylesheet" href="weather.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="weather.js"></script>
+</head>
+
+<body>
+  <img src="weather/weather_backgd.jpg" alt="">
+  <main>
+    <div class="search">
+      <input type="text" placeholder="search the place" id="place">
+      <span><ion-icon name="search-outline"></ion-icon></span>
+    </div>
+
+
+    <div class="datas">
+      <div class="info">
+        <h1 class="temp">29°C</h1>
+        <span class="area">
+          <div>
+            <ion-icon name="location-outline"></ion-icon>
+            <h2>Jharkhand</h2>
+          </div>
+          
+        </span>
+      </div>
+      <div class="other_info">
+        <span></span>
+     </div>
+    </div>
+
+  </main>
+
+  <!--------------------------------- creating wave animation ------------------------------------------------------------- -->
+  <!------------------------------- Waves Container-------------------------------->
+
+  <div class="footer">
+    <!--Content before waves-->
+
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" ) />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+  </div>
+  <!--Header ends-->
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
